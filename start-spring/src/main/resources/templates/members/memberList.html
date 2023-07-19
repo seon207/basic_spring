@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class = "container">
+    <div>
+        <table>
+            <thread>
+                <tr>
+                    <th>#</th>
+                    <th>이름</th>
+                </tr>
+            </thread>
+            <tbody>
+            <tr th:each = "member: ${members}"> <!--members 읽어옴-->
+                <td th:text="${member.id}"></td>    <!--각각 실행-->
+                <td th:text="${member.name}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
